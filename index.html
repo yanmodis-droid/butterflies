@@ -55,7 +55,6 @@
           <a href="#location">Как добраться</a>
           <a href="#faq">FAQ</a>
           <a href="#rules">Правила</a>
-          <a href="#contacts">Контакты</a>
           <a class="btn btn-small btn-primary" href="#tickets" data-open-booking>Записаться</a>
         </nav>
       </div>
@@ -67,7 +66,6 @@
         <a href="#location">Как добраться</a>
         <a href="#faq">FAQ</a>
         <a href="#rules">Правила</a>
-        <a href="#contacts">Контакты</a>
         <a class="btn btn-primary" href="#tickets" data-open-booking>Записаться</a>
       </nav>
     </header>
@@ -140,8 +138,7 @@
           </div>
 
           <div class="schedule-meta reveal">
-            <p><strong>Даты:</strong> 01 марта — 21 марта</p>
-            <p><strong>Ежедневно:</strong> 10:00 — 20:00 (последний вход 19:15)</p>
+            <p><strong>Время работы:</strong> среда-воскресенье, 10:00 — 19:00</p>
           </div>
 
           <div class="price-grid" id="tickets">
@@ -233,30 +230,20 @@
               <h2>Как добраться</h2>
             </div>
             <address>
-              <strong>Москва, Тестовая 12</strong><br />
-              Вход с центральной стороны здания.
+              <strong>Музейно-выставочный комплекс</strong><br />
+              Звуковая ул., 3
             </address>
-            <p>Постройте маршрут в картах и выберите удобный транспорт.</p>
-            <a
-              class="btn btn-secondary"
-              href="https://yandex.ru/maps/?text=Москва%2C%20Тестовая%2012"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Открыть маршрут в картах"
-            >
-              Открыть карту
-            </a>
+            <p>Время работы: среда-воскресенье с 10:00 до 19:00.</p>
           </div>
 
-          <a
-            class="map-card reveal"
-            href="https://yandex.ru/maps/?text=Москва%2C%20Тестовая%2012"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Открыть карту в новом окне"
-          >
-            <img src="assets/map-placeholder.svg" alt="Карта расположения выставки" loading="lazy" />
-          </a>
+          <div class="map-card reveal" aria-label="Карта расположения выставки">
+            <iframe
+              title="Яндекс Карта: Музейно-выставочный комплекс, Звуковая ул., 3"
+              src="https://yandex.ru/map-widget/v1/?ol=biz&oid=129336519715&z=16"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
         </div>
       </section>
 
@@ -338,41 +325,6 @@
         </div>
       </section>
 
-      <section class="section" id="contacts">
-        <div class="container contacts-grid">
-          <div class="reveal">
-            <div class="section-head">
-              <span class="eyebrow">Контакты</span>
-              <h2>Свяжитесь с нами</h2>
-            </div>
-            <ul class="contact-list">
-              <li><strong>Телефон:</strong> <a href="tel:+74990000000">+7 (499) 000-00-00</a></li>
-              <li><strong>Email:</strong> <a href="mailto:info@butterflyexpo.ru">info@butterflyexpo.ru</a></li>
-              <li><strong>Адрес:</strong> Москва, Тестовая 12</li>
-            </ul>
-            <div class="socials" aria-label="Социальные сети">
-              <a href="#" aria-label="Перейти в Telegram">Telegram</a>
-              <a href="#" aria-label="Перейти во ВКонтакте">VK</a>
-              <a href="#" aria-label="Перейти в Instagram">Instagram</a>
-            </div>
-          </div>
-
-          <form class="contact-form card reveal" novalidate>
-            <h3>Оставить вопрос</h3>
-            <label for="name">Имя</label>
-            <input id="name" name="name" type="text" autocomplete="name" required />
-
-            <label for="phone">Телефон</label>
-            <input id="phone" name="phone" type="tel" inputmode="tel" required />
-
-            <label for="message">Сообщение</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-
-            <button class="btn btn-primary" type="submit">Отправить</button>
-            <p class="form-note" aria-live="polite"></p>
-          </form>
-        </div>
-      </section>
     </main>
 
     <footer class="site-footer">

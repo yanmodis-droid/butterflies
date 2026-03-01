@@ -208,6 +208,13 @@ p {
   letter-spacing: -0.01em;
 }
 
+.brand-text {
+  font-family: "Kablammo", "Russo One", sans-serif;
+  font-size: clamp(1.2rem, 2.1vw, 1.65rem);
+  line-height: 1;
+  letter-spacing: 0.01em;
+}
+
 .brand-mark {
   width: 2rem;
   height: 2rem;
@@ -649,7 +656,7 @@ p {
   border: 1px solid #dfe5f1;
   border-radius: clamp(18px, 2.2vw, 26px);
   padding: clamp(1rem, 2.5vw, 1.8rem);
-  min-height: clamp(260px, 34vw, 480px);
+  min-height: clamp(180px, 22vw, 320px);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -717,6 +724,14 @@ address {
   border-radius: var(--radius-xl);
   overflow: hidden;
   box-shadow: var(--shadow);
+}
+
+.map-card iframe {
+  width: 100%;
+  height: 100%;
+  min-height: clamp(260px, 40vw, 420px);
+  border: 0;
+  display: block;
 }
 
 .faq-list {
