@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 360" role="img" aria-label="Правая ветка">
+  <g fill="none" stroke="#7ea06b" stroke-width="8" stroke-linecap="round">
+    <path d="M50 20c42 26 76 76 90 130 13 53 9 121-18 190"/>
+  </g>
+  <g fill="#9ebb81">
+    <path d="M108 86c34-8 62 2 88 31-39 8-69-2-88-31z"/>
+    <path d="M125 140c36-2 63 14 82 46-42 2-69-13-82-46z"/>
+    <path d="M118 210c35 5 58 27 68 62-38-6-61-28-68-62z"/>
+    <path d="M86 267c27 13 43 35 45 67-29-13-44-36-45-67z"/>
+  </g>
+</svg>

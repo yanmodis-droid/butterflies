@@ -1,0 +1,477 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Выставка бабочек в Москве</title>
+    <meta
+      name="description"
+      content="Выставка бабочек в Москве: расписание, цены, адрес, FAQ и покупка билетов."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kablammo:MORF@0..60&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+    <header class="site-header" id="top">
+      <div class="container header-inner">
+        <a class="brand" href="#top" aria-label="На главную">
+          <span class="brand-mark" aria-hidden="true">🦋</span>
+          <span class="brand-text">Тропикария</span>
+        </a>
+
+        <button
+          class="burger"
+          type="button"
+          aria-label="Открыть меню"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <span></span><span></span><span></span>
+        </button>
+
+        <nav class="desktop-nav" aria-label="Главная навигация">
+          <a href="#about">О выставке</a>
+          <a href="#schedule">Расписание и цены</a>
+          <a href="#gallery">Галерея</a>
+          <a href="#location">Как добраться</a>
+          <a href="#faq">FAQ</a>
+          <a href="#rules">Правила</a>
+          <a href="#contacts">Контакты</a>
+          <a class="btn btn-small btn-primary" href="#tickets" data-open-booking>Записаться</a>
+        </nav>
+      </div>
+
+      <nav class="mobile-menu" id="mobile-menu" aria-label="Мобильная навигация" hidden>
+        <a href="#about">О выставке</a>
+        <a href="#schedule">Расписание и цены</a>
+        <a href="#gallery">Галерея</a>
+        <a href="#location">Как добраться</a>
+        <a href="#faq">FAQ</a>
+        <a href="#rules">Правила</a>
+        <a href="#contacts">Контакты</a>
+        <a class="btn btn-primary" href="#tickets" data-open-booking>Записаться</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero hero-jungle section">
+        <div class="container">
+          <div class="hero-jungle-card reveal">
+            <div class="hero-jungle-content">
+              <p class="hero-jungle-label">ТРОПИКАРИЯ</p>
+              <h1 class="hero-jungle-title">ЖИВЫЕ БАБОЧКИ</h1>
+              <p class="hero-jungle-copy">
+                Если ты смелый, ловкий, умелый,<br />
+                джунгли тебя зовут!
+              </p>
+              <a class="btn btn-jungle" href="#tickets" data-open-booking>Записаться</a>
+            </div>
+
+            <figure class="hero-jungle-figure" aria-hidden="true">
+              <img
+                src="assets/hand.png"
+                alt=""
+                width="420"
+                height="300"
+                loading="eager"
+                decoding="async"
+              />
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container">
+          <div class="section-head reveal">
+            <span class="eyebrow">Почему стоит прийти</span>
+            <h2>Коротко о том, что вас ждет</h2>
+          </div>
+
+          <div class="cards-grid benefits-grid">
+            <article class="card reveal">
+              <span class="badge">Живые экспонаты</span>
+              <h3>Контакт с природой</h3>
+              <p>Наблюдайте за бабочками в естественной среде и узнайте, как они живут.</p>
+            </article>
+            <article class="card reveal">
+              <span class="badge">Для семьи</span>
+              <h3>Интересно детям и взрослым</h3>
+              <p>Спокойный формат посещения и понятная подача информации для любого возраста.</p>
+            </article>
+            <article class="card reveal">
+              <span class="badge">Фотозоны</span>
+              <h3>Красивые кадры</h3>
+              <p>Светлые зоны для фотографий и атмосферные декорации в тропическом стиле.</p>
+            </article>
+            <article class="card reveal">
+              <span class="badge">Комфорт</span>
+              <h3>Удобный маршрут</h3>
+              <p>Продуманная навигация по залу и возможность пройти выставку в своем темпе.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="schedule">
+        <div class="container">
+          <div class="section-head reveal">
+            <span class="eyebrow">Посещение</span>
+            <h2>Расписание и цены</h2>
+          </div>
+
+          <div class="schedule-meta reveal">
+            <p><strong>Даты:</strong> 01 марта — 21 марта</p>
+            <p><strong>Ежедневно:</strong> 10:00 — 20:00 (последний вход 19:15)</p>
+          </div>
+
+          <div class="price-grid" id="tickets">
+            <article class="price-card reveal">
+              <p class="price-amount">600 ₽</p>
+              <p class="price-caption">Взрослые<br />и дети старше<br />3-х лет</p>
+            </article>
+
+            <article class="price-card reveal">
+              <p class="price-amount">500 ₽</p>
+              <p class="price-caption">Пенсионеры<br />и многодетные<br />родители</p>
+            </article>
+
+            <article class="price-card reveal">
+              <p class="price-amount price-amount-free">Бесплатно</p>
+              <p class="price-caption">Дети до 3-х лет<br />Инвалиды (I-II группы)<br />Пенсионеры 75+</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section gallery-section" id="gallery">
+        <div class="container">
+          <div class="section-head reveal">
+            <span class="eyebrow">Галерея</span>
+            <h2 class="title-display">ГАЛЕРЕЯ БАБОЧЕК</h2>
+          </div>
+
+          <div class="species-switch reveal" role="tablist" aria-label="Типы бабочек">
+            <button
+              class="switch-btn is-active"
+              type="button"
+              role="tab"
+              aria-selected="true"
+              data-group="tropical"
+            >
+              Парусники
+            </button>
+            <button
+              class="switch-btn"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              data-group="classic"
+            >
+              Экзотика
+            </button>
+          </div>
+
+          <div class="species-carousel reveal" data-carousel>
+            <div
+              class="species-viewport"
+              tabindex="0"
+              aria-label="Слайдер с описанием бабочек"
+            >
+              <div class="species-track" data-group="tropical"></div>
+              <div class="species-track" data-group="classic" hidden></div>
+            </div>
+
+            <div class="species-controls">
+              <div class="carousel-nav">
+                <button
+                  class="arrow-btn"
+                  type="button"
+                  data-dir="prev"
+                  aria-label="Предыдущая бабочка"
+                >
+                  ←
+                </button>
+                <button
+                  class="arrow-btn"
+                  type="button"
+                  data-dir="next"
+                  aria-label="Следующая бабочка"
+                >
+                  →
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="location">
+        <div class="container location-grid">
+          <div class="reveal">
+            <div class="section-head">
+              <span class="eyebrow">Локация</span>
+              <h2>Как добраться</h2>
+            </div>
+            <address>
+              <strong>Москва, Тестовая 12</strong><br />
+              Вход с центральной стороны здания.
+            </address>
+            <p>Постройте маршрут в картах и выберите удобный транспорт.</p>
+            <a
+              class="btn btn-secondary"
+              href="https://yandex.ru/maps/?text=Москва%2C%20Тестовая%2012"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Открыть маршрут в картах"
+            >
+              Открыть карту
+            </a>
+          </div>
+
+          <a
+            class="map-card reveal"
+            href="https://yandex.ru/maps/?text=Москва%2C%20Тестовая%2012"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Открыть карту в новом окне"
+          >
+            <img src="assets/map-placeholder.svg" alt="Карта расположения выставки" loading="lazy" />
+          </a>
+        </div>
+      </section>
+
+      <section class="section" id="faq">
+        <div class="container">
+          <div class="section-head reveal">
+            <span class="eyebrow">FAQ</span>
+            <h2>Частые вопросы</h2>
+          </div>
+
+          <div class="faq-list">
+            <div id="faq-dynamic"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="rules">
+        <div class="container">
+          <div class="section-head reveal">
+            <span class="eyebrow">Внимание</span>
+            <h2>Правила Выставки</h2>
+          </div>
+
+          <div class="rules-list">
+            <article class="rule-item reveal">
+              <h3>НЕ ХВАТАТЬ бабочек за крылья</h3>
+              <p>
+                Крылья бабочек очень нежные, неосторожные и грубые прикосновения могут повредить
+                их. Бабочка в дальнейшем будет плохо летать или не будет вовсе.
+              </p>
+            </article>
+
+            <article class="rule-item reveal">
+              <h3>НЕ БЕГАТЬ по выставке</h3>
+              <p>
+                Передвигаться по выставке нужно только медленно. Бабочки летают везде и могут
+                садиться на пол. Пятясь назад или бегая по залу, их можно раздавить. Поэтому всегда
+                смотрим под ноги и передвигаемся аккуратно.
+              </p>
+            </article>
+
+            <article class="rule-item reveal">
+              <h3>НЕ СМАХИВАТЬ бабочек</h3>
+              <p>
+                Бабочки иногда садятся на посетителей. Если бабочку смахнуть рукой - она будет
+                повреждена. Достаточно аккуратно взять бабочку под брюшко или попросить об этом
+                администратора.
+              </p>
+            </article>
+
+            <article class="rule-item reveal">
+              <h3>НЕ ФОТОГРАФИРОВАТЬ со вспышкой</h3>
+              <p>
+                Для бабочек вспышка камеры может быть очень некомфортной, просьба делать фотографии
+                без вспышек.
+              </p>
+            </article>
+
+            <article class="rule-item reveal">
+              <h3>СЛЕДИТЬ за детьми</h3>
+              <p>
+                Родители должны следить за поведением своих детей на выставке: чтобы они
+                придерживались правил, не бегали по залу и не хватали бабочек за крылья.
+              </p>
+            </article>
+          </div>
+
+          <aside class="rules-warning reveal" aria-label="Важная информация">
+            <h3>ВАЖНО!</h3>
+            <p>
+              В случае несоблюдения правил администрация вынуждена будет отказать в посещении.
+              Оплата в этом случае не возвращается.
+            </p>
+            <p>
+              Посетители, причинившие вред бабочкам или имуществу, обязаны оплатить стоимость
+              бабочки или ремонта в полном объеме.
+            </p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section" id="contacts">
+        <div class="container contacts-grid">
+          <div class="reveal">
+            <div class="section-head">
+              <span class="eyebrow">Контакты</span>
+              <h2>Свяжитесь с нами</h2>
+            </div>
+            <ul class="contact-list">
+              <li><strong>Телефон:</strong> <a href="tel:+74990000000">+7 (499) 000-00-00</a></li>
+              <li><strong>Email:</strong> <a href="mailto:info@butterflyexpo.ru">info@butterflyexpo.ru</a></li>
+              <li><strong>Адрес:</strong> Москва, Тестовая 12</li>
+            </ul>
+            <div class="socials" aria-label="Социальные сети">
+              <a href="#" aria-label="Перейти в Telegram">Telegram</a>
+              <a href="#" aria-label="Перейти во ВКонтакте">VK</a>
+              <a href="#" aria-label="Перейти в Instagram">Instagram</a>
+            </div>
+          </div>
+
+          <form class="contact-form card reveal" novalidate>
+            <h3>Оставить вопрос</h3>
+            <label for="name">Имя</label>
+            <input id="name" name="name" type="text" autocomplete="name" required />
+
+            <label for="phone">Телефон</label>
+            <input id="phone" name="phone" type="tel" inputmode="tel" required />
+
+            <label for="message">Сообщение</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button class="btn btn-primary" type="submit">Отправить</button>
+            <p class="form-note" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© 2026 Тропикария. Все права защищены.</p>
+        <a href="#top">Наверх</a>
+      </div>
+    </footer>
+
+    <a
+      class="mobile-cta btn btn-primary"
+      href="#tickets"
+      data-open-booking
+      aria-label="Записаться"
+    >
+      Записаться
+    </a>
+
+    <div class="pupa-modal" id="pupa-modal" hidden>
+      <div class="pupa-backdrop" data-close-pupa></div>
+      <section class="pupa-dialog" role="dialog" aria-modal="true" aria-labelledby="pupa-title">
+        <button class="pupa-close" type="button" aria-label="Закрыть фото куколки" data-close-pupa>
+          ✕
+        </button>
+        <h3 class="pupa-title" id="pupa-title">Фото куколки</h3>
+        <img id="pupa-image" src="" alt="Фото куколки бабочки" />
+      </section>
+    </div>
+
+    <div class="booking-modal" id="booking-modal" hidden>
+      <div class="booking-backdrop" data-close-booking></div>
+      <section
+        class="booking-dialog"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="booking-title"
+      >
+        <button class="booking-close" type="button" aria-label="Закрыть форму" data-close-booking>
+          ✕
+        </button>
+        <h2 id="booking-title" class="booking-title">Записаться</h2>
+
+        <form class="booking-form" id="booking-form" novalidate>
+          <label for="booking-name">Ваше имя</label>
+          <input
+            id="booking-name"
+            name="name"
+            type="text"
+            placeholder="Укажите имя"
+            autocomplete="name"
+            required
+          />
+
+          <label for="booking-date">Дата посещения</label>
+          <input id="booking-date" name="date" type="date" required />
+
+          <label for="booking-time">Время посещения</label>
+          <select id="booking-time" name="time" required>
+            <option value="">Выберите время</option>
+            <option value="10:00">10:00</option>
+            <option value="11:00">11:00</option>
+            <option value="12:00">12:00</option>
+            <option value="13:00">13:00</option>
+            <option value="14:00">14:00</option>
+            <option value="15:00">15:00</option>
+            <option value="16:00">16:00</option>
+            <option value="17:00">17:00</option>
+            <option value="18:00">18:00</option>
+            <option value="19:00">19:00</option>
+          </select>
+
+          <label for="booking-visitors">Количество посетителей</label>
+          <select id="booking-visitors" name="visitors" required>
+            <option value="">Укажите количество</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6+">6+</option>
+          </select>
+
+          <label for="booking-phone">Ваш номер телефона</label>
+          <input
+            id="booking-phone"
+            name="phone"
+            type="tel"
+            inputmode="tel"
+            placeholder="+7 (___) ___-__-__"
+            autocomplete="tel"
+            required
+          />
+
+          <button class="btn btn-ticket booking-submit" type="submit">Записаться</button>
+          <p class="booking-note" id="booking-note" aria-live="polite"></p>
+        </form>
+      </section>
+    </div>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>

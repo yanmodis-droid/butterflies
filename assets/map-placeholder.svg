@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" role="img" aria-label="Плейсхолдер карты">
+  <rect width="900" height="620" fill="#edf3ff"/>
+  <path d="M0 120h900M0 260h900M0 400h900M180 0v620M360 0v620M540 0v620M720 0v620" stroke="#d1dcf2" stroke-width="4"/>
+  <circle cx="450" cy="300" r="78" fill="#1d78e5"/>
+  <circle cx="450" cy="300" r="36" fill="#fff"/>
+  <path d="M450 176c-65 0-118 52-118 117 0 94 118 199 118 199s118-105 118-199c0-65-53-117-118-117z" fill="#1d78e555"/>
+</svg>
