@@ -1149,16 +1149,72 @@ body.no-scroll {
 }
 
 @media (max-width: 759px) {
+  .hero-jungle {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .hero-jungle .container {
+    width: 100%;
+  }
+
+  .hero-jungle-card {
+    min-height: calc(100dvh - 72px);
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+    padding: clamp(1.1rem, 5vw, 1.6rem);
+  }
+
+  .hero-jungle-content {
+    position: relative;
+    min-height: calc(100dvh - 72px);
+    width: 100%;
+    max-width: 100%;
+    justify-items: center;
+    text-align: center;
+    margin-inline: auto;
+  }
+
+  .hero-jungle-center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: min(92vw, 620px);
+  }
+
   .hero-jungle-label {
-    max-width: 9ch;
+    max-width: none;
+    font-size: clamp(2.65rem, 14vw, 5.1rem);
+    line-height: 0.9;
   }
 
   .hero-jungle-title {
-    max-width: 10ch;
+    max-width: none;
+    font-size: clamp(3rem, 15vw, 5.6rem);
+    line-height: 0.92;
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-jungle-copy {
+    font-size: clamp(1.55rem, 7.8vw, 2.4rem);
+    line-height: 1.22;
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .hero-jungle .btn-jungle {
+    display: none;
   }
 
   .hero-jungle-figure {
     opacity: 0.85;
+    right: clamp(-54px, -10vw, -20px);
+    bottom: clamp(10px, 4vw, 26px);
+    width: clamp(280px, 88vw, 470px);
   }
 
   .species-carousel::before,
