@@ -159,6 +159,18 @@ p {
   font-size: 0.88rem;
 }
 
+.btn-phone {
+  background: #ffffff;
+  color: #21345a;
+  border-color: #d9e0ee;
+  box-shadow: 0 6px 14px rgba(39, 45, 60, 0.08);
+}
+
+.btn-phone:hover,
+.btn-phone:focus-visible {
+  transform: translateY(-1px);
+}
+
 .btn-ticket {
   background: #f8cb00;
   color: #111;

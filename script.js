@@ -470,9 +470,7 @@ const bookingNote = document.querySelector('#booking-note');
 const bookingOpenButtons = document.querySelectorAll('[data-open-booking]');
 const bookingCloseButtons = document.querySelectorAll('[data-close-booking]');
 
-// Fill these values to enable direct Telegram delivery.
-const TELEGRAM_BOT_TOKEN = '8079801362:AAH2IGI9OD03iI9OHOWiGbPH3G-feNRSu9s';
-const TELEGRAM_CHAT_ID = '859840618';
+const BOOKING_ENDPOINT = '/api/booking';
 
 const openBookingModal = () => {
   if (!bookingModal) return;
@@ -536,44 +534,30 @@ if (bookingForm) {
       return;
     }
 
-    const message = [
-      'Новая бронь с сайта выставки бабочек:',
-      `Имя: ${name}`,
-      `Дата: ${date}`,
-      `Время: ${time}`,
-      `Посетителей: ${visitors}`,
-      `Телефон: ${phone}`
-    ].join('\n');
-
     try {
-      if (
-        TELEGRAM_BOT_TOKEN !== 'PASTE_TELEGRAM_BOT_TOKEN'
-        && TELEGRAM_CHAT_ID !== 'PASTE_TELEGRAM_CHAT_ID'
-      ) {
-        const response = await fetch(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            chat_id: TELEGRAM_CHAT_ID,
-            text: message
-          })
-        });
+      const response = await fetch(BOOKING_ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name,
+          date,
+          time,
+          visitors,
+          phone
+        })
+      });
 
-        if (!response.ok) {
-          throw new Error('Telegram API error');
-        }
-      } else {
-        const shareUrl = `https://t.me/share/url?url=${encodeURIComponent('https://example.com')}&text=${encodeURIComponent(message)}`;
-        window.open(shareUrl, '_blank', 'noopener,noreferrer');
+      if (!response.ok) {
+        throw new Error('Booking API error');
       }
 
-      bookingNote.textContent = 'Заявка отправлена в Telegram.';
+      bookingNote.textContent = 'Данные отправлены администратору. Мы свяжемся для подтверждения. Спасибо!';
       bookingNote.classList.remove('error');
       bookingNote.classList.add('success');
       bookingForm.reset();
       window.setTimeout(() => closeBookingModal(), 900);
     } catch (error) {
-      bookingNote.textContent = 'Не удалось отправить. Проверьте Telegram токен/chat_id.';
+      bookingNote.textContent = 'Не удалось отправить. Попробуйте позже.';
       bookingNote.classList.add('error');
       bookingNote.classList.remove('success');
     }
