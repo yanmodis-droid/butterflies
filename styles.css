@@ -1026,6 +1026,18 @@ body.no-scroll {
   justify-content: center;
 }
 
+.booking-alt {
+  margin: 0.65rem 0 0;
+  color: #2a2f3d;
+  font-size: 0.98rem;
+  font-weight: 600;
+}
+
+.booking-alt a {
+  color: #1a4b8b;
+  text-decoration: underline;
+}
+
 .booking-note {
   margin: 0.35rem 0 0;
   min-height: 1.1rem;
